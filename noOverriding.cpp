@@ -5,7 +5,7 @@ using namespace std;
 //tambahan final sesudah nama class
 //untuk mencegah adanya overridding
 
-class baseClass
+class baseClass final
 {
 public:
     virtual void perkenalan()
