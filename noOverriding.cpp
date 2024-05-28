@@ -21,7 +21,7 @@ class derivedClass : public baseClass
     {
         cout << "Halo saya function dari derived class" << endl;
     }
-};
+}; 
 
 int main()
 {
