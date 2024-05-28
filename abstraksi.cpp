@@ -20,7 +20,7 @@ class AbstraksiKlas
     {
         cout << x << endl;
         cout << y << endl;
-    }
+    } 
 };
 
 int main()
