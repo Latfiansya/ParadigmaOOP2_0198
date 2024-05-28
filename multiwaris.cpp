@@ -20,7 +20,7 @@ public:
     { 
         cout << "pekerja dibuat\n" << endl; 
     } 
-}; 
+};  
  
 class Pelajar : virtual public Orang { 
 public: 
