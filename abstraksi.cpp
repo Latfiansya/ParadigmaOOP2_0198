@@ -14,7 +14,7 @@ class AbstraksiKlas
     {
          x = a; 
          y = b; 
-    }
+    } 
     //method untuk menampilkan nilai
     void display()
     {
