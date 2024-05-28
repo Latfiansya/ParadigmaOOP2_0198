@@ -14,7 +14,7 @@ class remoteLampu
     string getSaklarNo(int i)
     {
         return saklarNo[i];
-    }  
+    }
 };
 
 int main()
