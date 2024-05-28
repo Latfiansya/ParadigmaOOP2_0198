@@ -2,10 +2,11 @@
 using namespace std; 
  
  
-class Orang { 
+class Orang 
+{ 
 public: 
     int umur; 
- 
+    
     Orang(int pUmur) : 
     umur(pUmur) 
     { 
@@ -13,8 +14,9 @@ public:
     } 
 }; 
  
-class Pekerja : virtual public Orang { 
-public: 
+class Pekerja :  public Orang 
+{ 
+    public: 
     Pekerja(int pUmur) : 
     Orang(pUmur) 
     { 
@@ -22,8 +24,9 @@ public:
     } 
 }; 
  
-class Pelajar : virtual public Orang { 
-public: 
+class Pelajar :  public Orang 
+{ 
+    public: 
     Pelajar(int pUmur) : 
     Orang(pUmur) 
     { 
@@ -31,20 +34,20 @@ public:
     } 
 }; 
  
-class Budi : public Pekerja, public Pelajar { 
-public: 
- 
+class Budi : public Pekerja, public Pelajar 
+{ 
+    public: 
     Budi(int pUmur) : 
     Pekerja(pUmur), 
-    Pelajar(pUmur), 
-    Orang(pUmur)  //hanya dapat dilakukan jika menggunakan virtual 
+    Pelajar(pUmur) 
     { 
         cout << "budi dibuat\n" << endl; 
     } 
 }; 
  
-int main() { 
+int main() 
+{ 
     Budi a(12); 
- 
-    return 0; 
+    
+    return 0;  
 }

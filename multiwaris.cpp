@@ -2,7 +2,8 @@
 using namespace std; 
  
  
-class Orang { 
+class Orang 
+{ 
 public: 
     int umur; 
  
@@ -13,7 +14,8 @@ public:
     } 
 };
  
-class Pekerja : virtual public Orang { 
+class Pekerja : virtual public Orang 
+{ 
 public: 
     Pekerja(int pUmur) : 
     Orang(pUmur) 
@@ -22,7 +24,8 @@ public:
     } 
 };  
  
-class Pelajar : virtual public Orang { 
+class Pelajar : virtual public Orang 
+{ 
 public: 
     Pelajar(int pUmur) : 
     Orang(pUmur) 
@@ -31,7 +34,8 @@ public:
     } 
 }; 
  
-class Budi : public Pekerja, public Pelajar { 
+class Budi : public Pekerja, public Pelajar 
+{ 
 public: 
  
     Budi(int pUmur) : 
@@ -43,7 +47,8 @@ public:
     } 
 }; 
  
-int main() { 
+int main() 
+{ 
     Budi a(12); 
  
     return 0; 
