@@ -4,7 +4,7 @@ using namespace std;
 class seseorang
 {
     public:
-    virtual void pesan() = 0; //pure virtual function (override)
+    virtual void pesan() = 0; //pure virtual function (override) 
 
     // virtual function biasa
     // virtual void pesan()
@@ -15,7 +15,7 @@ class seseorang
 
 class joko : public seseorang
 {
-    public: 
+    public:
     void pesan()
     {
         cout << "pesan dari joko" << endl;
